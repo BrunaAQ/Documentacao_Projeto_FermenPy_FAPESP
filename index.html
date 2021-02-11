@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html - lang-"pt-br">
+    <head>
+        <meta charset = "utf-8">
+        <link  rel = "stylesheet" type = "text/css" href = "bootstrap-4.5.0-dist/css/bootstrap.min.css">
+        <link  rel = "stylesheet" type = "text/css" href = "style.css">
+        <script type="text/javascript" src="main.js"></script>
+        <title>
+        FermenPy
+        </title>
+    </head>
+    
+    <body>
+        
+
+        <header>
+            <div class = "container-fluid cabecalho text-center margin bordercabecalho">
+                <h2>
+                    SIMULAÇÃO E MODELAGEM DE PROCESSOS FERMENTATIVOS MICROBIANOS
+                </h2>
+            </div>
+        </header>
+        
+        <nav class = "menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light " >
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.jpeg" width="45" height="60">
+                </a>
+                <div class = "collapse navbar-collapse">
+                    <ul class = "navbar-nav">
+
+                        <li class = "nav-item"> 
+                            <a class = "nav-link active" href = "#quem somos"> QUEM SOMOS </a> </li>
+                        <li class = "nav-item"> 
+                            <a class = "nav-link active" href = "pesquisa.html"> NOSSA PESQUISA </a> </li>
+                        <li class = "nav-item"> 
+                            <a class = "nav-link active" href = "#documentacao"> DOCUMENTAÇÃO  </a> 
+                            <ul>
+                                <li class = "nav-item"> 
+                                    <a class = "nav-link active" href = "#batelada"> BATELADA </a> 
+                                    <ul>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#balanco massa"> BALANÇO DE MASSA </a> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "nav-item"> 
+                                    <a class = "nav-link active" href = "#batelada alimentada"> BATELADA ALIMENTADA </a> 
+                                    <ul>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#balanco massa"> BALANÇO DE MASSA </a> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "nav-item"> 
+                                    <a class = "nav-link active" href = "#continuo quimiostato"> CONTÍNUO QUIMIOSTATO </a> 
+                                    <ul>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#balanco massa"> BALANÇO DE MASSA </a> 
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "nav-item"> 
+                                    <a class = "nav-link active" href = "#modelos cineticos"> MODELOS CINÉTICOS </a> 
+                                    <ul>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#ausencia inibicao"> AUSÊNCIA DE INIBIÇÃO </a> </li>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#inibicao substrato">INIBIÇÃO POR SUBSTRATO </a> </li>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#inibicao produto"> INIBIÇÃO POR PRODUTO </a> </li>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#inibicao biomassa"> INIBIÇÃO POR BIOMASSA </a> </li>
+                                    </ul>
+                                </li>
+                                <li class ="nav-item"> 
+                                    <a class = "nav-link active" href = "#algoritmos"> ALGORITMOS </a>
+                                    <ul>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#integracao numerica"> INTEGRAÇÃO NUMÉRICA </a> </li>
+                                        <li class ="nav-item"> 
+                                            <a class = "nav-link active" href = "#regressao"> REGRESSÃO </a>
+                                            <ul>
+                                                <li class ="nav-item"> 
+                                                    <a class = "nav-link active" href = "#linear"> LINEAR </a>
+                                                    <ul>
+                                                        <li class ="nav-item active"> 
+                                                            <a class = "nav-link" href = "#calibracao"> CALIBRAÇÃO </a> </li>
+                                                    </ul>
+                                                </li>
+                                       
+                                                <li class ="nav-item active">  
+                                                    <a class = "nav-link" href = "#nao linear"> NÃO LINEAR </a>
+                                                    <ul>
+                                                        <li class ="nav-item active"> 
+                                                            <a class = "nav-link" href = "#AG"> ALGORITMO GENÉTICO </a> </li>
+                                                        <li class ="nav-item active"> 
+                                                            <a class = "nav-link" href = "#ALM"> ALGORITMO LM </a> </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link active" href = "#referencias"> BIBLIOGRAFIA </a> </li>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class ="nav-item active"> <a class = "nav-link" href = "tutorial.html"> TUTORIAIS </a> </li>
+                        <li class ="nav-item active"> <a class = "nav-link" href = "covid.html"> ADICIONAIS </a> </li>
+                        <li class ="nav-item active"> <a class = "nav-link" href = "#contatos"> CONTATOS </a> </li>
+                       
+                    </ul>
+                
+                
+                </div>
+            </nav>  
+        </nav>
+    
+        <section id="quem somos">
+            <header class = "titulo">
+                <h2> APRESENTAÇÃO DO GRUPO </h2>
+            </header>
+            <article class = "quemsomos">
+                <p> 
+                    O grupo FermenPy é formando por alunos graduandos do curso de Engenharia de Bioprocessos e 
+                    Biotecnologia,
+                    oferecido pelo Departamento de Engenharia de Bioprocessos e Biotecnologia  (DEBB), o qual está
+                    vinculado à Faculdade de Ciências Farmacêuticas de Araraquara, um dos campi da Universidade
+                    Estadual Paulista "Júlio de Mesquita Filho", UNESP e conta com a orientação e participação 
+                    direta do Professor Doutor Marcel Otávio Cerri, docente na mesma instituição e responsável por 
+                    várias disciplinas do referido curso. Uma delas, a de <i> Processos Fermentativos Microbianos </i>,
+                    forneceu as bases e motivações para a criação do time e desenvolvimento do projeto.
+                    Ainda, a equipe conta com a coorientação do Professor Doutor Marcelo Perencin de Arruda 
+                    Ribeiro, docente do Departamento de Engenharia Química da Universidade 
+                    Federal de São Carlos, tendo sua linha de pesquisa voltada para a modelagem de processos químicos.
+                </p>
+
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-lg-3">
+                            <img src = "img/perfil.jpeg" class = "rounded-circle" width = 200px height = 210px>   
+                            <div>
+                                <a href = "https://www.facebook.com/profile.php?id=100006425151981" target = "_blank">
+                                    <img src = "img/logo_facebook.jpg" width = 30px>
+                                </a>
+                                <a href = "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2753494Z0&tokenCaptchar=03AGdBq27oCMpv9XcoK5ST57enDeHhXYY30dI17ucwpflPvUrvikQ8Zoo2bYOIkFZafUdIQ_Gvyc2U6U8zHtBIueyOB1x6oScgVsmzIjDv-x_0Rhgv64I1Cq0hy0GqeiYYCGBCqXZVZFBBZRTybG5Ts840gqVrMTThRJeRMzdg1c-JGjDz_PF3ol23KCkMkKyH7oSSSbqO_Npue8MVhMiT8YrWZT0bNvF6vuSlvRzHV52O3oyfW5-3AfNmydnn4pDzL-r2f7aMQm-jMdiKIzP1JNPWuVIPVH3BSsI-cBNrzfS4Inn6RSeaClBYKxV3QBTYFSAWEkrxQPyHx0QAFi6lbsDy9xsvRYlulcb9u-HjWoFwMXDEehHbu0OiIZFbEBoOvnJJOwbEFNiTXDK48Vyzbs7TOGeawzBLUg" target = "_blank">
+                                    <img src = "img/logo_lattes.png" width = 50px>
+                                </a>   
+                                <a href = "https://github.com/BrunaAQ" target = "_blank">
+                                    <img src = "img/github.jpg" width = 43px>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class = "col-lg-3">
+                            <img src = "img/foto_perfil_joao.jpeg" class = "rounded-circle" width = 200px height = 210px>   
+                            <div>
+                                <a  href = "#contatos">
+                                    <img src = "img/email.jpg" width = 40px>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class = "col-lg-3">
+                            <img src = "img/foto_perfil_marcel.gif" class = "rounded-circle" width = 200px height = 210px>   
+                            <div>
+                                <a href = "https://web.facebook.com/marcelcerri" target = "_blank">
+                                    <img src = "img/logo_facebook.jpg" width = 30px>
+                                </a>
+                                <a href = "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4736587Z6&tokenCaptchar=03AGdBq24fnqD0P-PQg_HTNO3qiwoVfSGxHLlY0_abE7XuVOy77Zpn9u5XWpzz-wqKEui2oKSXJUhXaoknBXpJARxudFTdnaO9M-o-_U81yCHg7ZyRhLW7CqsoQO1VV09GBALmEw_IMo5nU9Jg0r_kNI5uCUj4uxVLXY7YPll3MVQdof6gaBoIc7U3A2s8lkV369fRz-upBrv7yjf0-fSb1ZdR7XqVi8jTbqIlkIuXVKf7YlOo-VHslU-mUcezNDaUgpSUdQ9kX3Vcq-gqfq0lREgTY_BBp51jgC1EI66DxpxDclY2ewAxLjwlKtJRZKgaNokMovVra1Oe6c9wZEgrpTNjAtAWK_aRi3-Fve2_DAYuR4krSnEly5NoHxYQ-22QrCptLLUJtMGB-tLXrB5XrDXtGSijDNY22Q" target = "_blank">
+                                    <img src = "img/logo_lattes.png" width = 50px>
+                                </a>   
+                                <a href = "https://github.com/marcelcerri" target = "_blank">
+                                    <img src = "img/github.jpg" width = 43px>
+                                </a> 
+                            </div>
+                        </div>
+                        <div class = "col-lg-3">
+                            <img src = "img/foto_perfil_marcelo.gif" class = "rounded-circle" width = 180px height = 210px>   
+                            <div>
+                                <a href = "https://www.facebook.com/profile.php?id=100006425151981" target = "_blank">
+                                    <img src = "img/logo_facebook.jpg" width = 30px>
+                                </a>
+                                <a href = "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4775067P0&tokenCaptchar=03AGdBq27pS_xa335iU299687QQA0ehlr6zuyp-K2A7s8vpnbw-tfAucX4YoaYKS_mRkBjWwCkDdsVeUZg7hOJE40_3MvqiapqeQzEi8yDzXjri_3j7edei75AEw34I1v3xN1kPG6vpkNkk4Acxzm5kKhu93w2XRLXkp3KYRVMInCvFboUeaHLEhx5OK4ymwnPATwzjCX8op95tuttONiIlKqcEw3SvxzDrt4fLNUXk-D2EqqZZbUwKksvUmBEtr0LskdcUBzNlioMzZ_C9v_WLeaI_UESyfS5oEVwosjT-j0h7kvf_ut0O2e0MyNekjqreq2xcvc9QNSLZB7LVfq4hjPHm9NyRhHVSg-89McB2tSRp0ymwnemm1ox1tKrercJqlK7Kok6FNSmGiYZnuDQ8kfP3U-EUgocMQ" target = "_blank">
+                                    <img src = "img/logo_lattes.png" width = 50px>
+                                </a>   
+                                <a href = "https://github.com/BrunaAQ" target = "_blank">
+                                    <img src = "img/github.jpg" width = 43px>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <header class = "titulo">
+                <h2> FOCOS DO NOSSO ESTUDO </h2>
+            </header>
+            <article class = "focos_container">
+                <div class = "focos">
+                    <p class = "foco_1">Bioprocessos microbianos</p>
+                    <p class = "foco_2">Fermentação em batelada</p>
+                    <p class = "foco_3">Fermentação em batelada alimentada</p>
+                    <p class = "foco_4">Fermentação em quimiostato</p>
+                </div>
+                <div class = "focos">
+                    <p class = "foco_5">Python</p>
+                    <p class = "foco_6">Algoritmo genético</p>
+                    <p class = "foco_7">Algoritmo de Levenberg-Marquardt</p>
+                    <p class = "foco_8">Interface <i>GUI</i></p>
+                    <p class = "foco_9">Simulação e Modelagem</p>
+                </div>
+                <button class = "botao_explorar" type="button" onclick="explorar()">Explorar o site</button>
+            </article>
+        </section>
+
+        <section>
+            <header class = "titulo">
+                <h2></h2>
+            </header>
+
+        </section>
+        
+        <footer>
+            <div class = " rodape">
+                <p>Projeto de pesquisa apoiado por:</p>
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-lg-4">
+                            <a href ="https://www2.unesp.br/" target = "_blank">
+                                <img src = "img/unesp.gif" width="200px">   
+                            </a>
+                        </div>
+                        <div class = "col-lg-4">
+                            <a href ="http://www.fapesp.br/" target = "_blank">
+                                <img src = "img/fapesp.png" width="200px">  
+                            </a> 
+                        </div>
+                        <div class = "col-lg-4">
+                            <a href = "https://www2.ufscar.br/" target = "_blank">
+                                <img src = "img/ufscar.png" width="200px">   
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <h6> <b> Última atualização em 20/01/2021 10:20 </b> </h6>
+            </div>
+            
+        </footer>
+    
+    </body>
+
+    
+</html>
