@@ -11,17 +11,35 @@ body {
     text-align: center;
 }
 
-.titulos_tutoriais {
-    color: white;
-    background: grey;
-    height: 90px;
-    width: 200px;
-    margin: 30px 583px 10px 583px;
-    border-radius: 50%;
-    padding-top: 30px;
-    text-decoration: underline;
+.sumario_tutorial {
+    background-image: url(img/plano_de_fundo.png);
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 40px 110px;
+    padding: 60px 60px 40px 60px;
+    border-radius: 20%;
+    border: 1px solid rgb(73, 72, 72);
 }
+
+.legenda_interfaces {
+    color: rgb(165, 161, 161);
+    display: column;
+    border: 1px dashed rgb(46, 43, 43);
+    padding: 2px;
+}
+
+.titulo_interfaces {
+    display: column;
+    width: 200px;
+    margin: 2px 400px 20px 400px;
+    border-top: 1px solid yellowgreen;
+    border-bottom: 1px dashed yellowgreen;
+}
+.titulo_interfaces a {
+    color: white;
+}
+
 
 .quemsomos {
     background-color: transparent;
@@ -40,7 +58,6 @@ body {
     text-align: justify;
     border: 1px dashed rgb(155, 11, 155);
 }
-
 
 .pesquisa_imagens {
     border-radius: 50%;
@@ -211,25 +228,80 @@ body {
 }
 
 .tutorial {
-    color: white;
+    color: black;
 }
 
 .tutorial_titulo {
-    margin: 10px;
+    background: white;
     text-align: center;
     text-decoration: underline;
     padding-bottom: 2px;
+    border-top: 1px solid black;
 }
 
 .tutorial_descricao {
-    background: rgb(7, 167, 132);
+    background: rgb(246, 248, 247);
     text-align: justify;
     padding: 2px 8px 2px 8px;
     border: 1px dashed black;   
 }
 
+#calibrapy {
+    color: white;
+    margin: 100px;
+}
 
+.subtitulo {
+    text-decoration: underline;
+    border-top: 2px solid hotpink;
+    width: 100px;
+}
 
+.tutorial_conteudo {
+    margin: 20px 60px 10px 60px;
+
+}
+
+.calibrapy_tutorial {
+    background: black;
+    text-align: justify;
+    padding: 2px 15px 0px 15px;
+    border: 1px dashed rgb(68, 24, 31)
+}
+
+.calibrapy_tutorial h6 {
+    font-family: monospace;
+    font-size: 16px;
+}
+.botao_baixar {
+    margin: 0 32px;
+}
+.botao_baixar:hover {
+    color:yellowgreen;
+    background: black;
+}
+
+.video {
+    background-image: url('img/plano_de_fundo.png');
+    margin: 20px 150px 20px 150px;
+    border: 1px solid rgb(32, 30, 30);
+    width: 800px;
+    padding: 20px;
+}
+
+.imagens {
+    background-image: url('img/plano_de_fundo_imagem.jpeg');
+    margin: 10px;
+}
+
+.legenda p{
+    color:rgb(156, 156, 156);
+    background-image: url('img/plano_de_fundo.png');
+    font-size: 14px;
+    margin: 10px 100px 40px 100px;
+    padding: 10px;
+    border: 1px dashed rgb(36, 34, 34);
+}
 
 
 
@@ -281,7 +353,7 @@ p {
 }
 
 .menu ul {
-    padding: 0;   
+    padding: 0;  
 }
 .menu ul ul {
     display: none;
@@ -735,9 +807,7 @@ p {
 .balancomassa h3{
     color: #766E6B;
 }
-.legenda p{
-    font-size: 14px;
-}
+
 .borderequacaoregressao{
     width: 600px;
     background-color: rgb(174, 211, 174);
