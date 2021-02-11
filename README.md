@@ -6,7 +6,8 @@
 #### Tecnologias envolvidas:
 * 💡 HTML5 (estruturação básica);
 * 🎨 CSS3 (estilização dos elementos constituintes de exibição ao usuário);
-    * 🟣 BOOTSTRAP (<i>framework</i> de auxílio e facilitação à criação de estilo)
+    * 🟣 BOOTSTRAP (<i>framework</i> de auxílio e facilitação à criação de estilo);
+* 🎨 JAVASCRIPT (apoio e facilitação do desenvolvimento)
 
 #### ⚠️ Observação: 
 * <b>ESTA É A SEGUNDA VERSÃO DO SITE <i>site</i> ;
