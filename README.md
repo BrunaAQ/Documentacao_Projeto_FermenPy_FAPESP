@@ -3,11 +3,14 @@
                                                                                         
 #### 🎯 Repositório destinado à hospedagem de todos os arquivos envolvidos no desenvolvimento de página <i>web</i> que carrega toda a documentação contemplada pelo projeto        desenvolvido até o momento
 
+
 #### Tecnologias envolvidas:
 * 💡 HTML5 (estruturação básica);
 * 🎨 CSS3 (estilização dos elementos constituintes de exibição ao usuário);
     * 🟣 BOOTSTRAP (<i>framework</i> de auxílio e facilitação à criação de estilo);
 * 🎨 JAVASCRIPT (apoio e facilitação do desenvolvimento)
+
+
 
 #### ⚠️ Observação: 
 * <b>ESTA É A SEGUNDA VERSÃO DO SITE <i>site</i> ;
