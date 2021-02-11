@@ -135,24 +135,185 @@
             </header>
         </section>
 
-        <section class = "titulo">
-            <h2>INTERFACES</h2>
-            <article >
-                <p> <h6> <b> Funcionalidade: </b> 
+        <header class = "titulo">
+           <h2>INTERFACES<br/>🖥️</h2>
+        </header>
+
+        <header class = "sumario_tutorial">
+            <p class = "legenda_interfaces">1️⃣<br/><br/>Curva de calibração (Interface de usuário)</p>
+            <p class = "titulo_interfaces"><a href = "#calibrapy"><i><b>Calibrapy</b></i></a></p>
+            <p class = "legenda_interfaces">2️⃣<br/><br/>Simulação | Modelagem batelada (Interface de usuário)</p>
+            <p class = "titulo_interfaces"><a href = "#calibrapy"><i><b>Fermenpy</b></i></a></p></p>
+            <p class = "legenda_interfaces">3️⃣<br/><br/>Simulação | Modelagem batelada alimentada (Interface de usuário)</p>
+            <p class = "titulo_interfaces"><a href = "#calibrapy"><i><b>Fermenpy BA-I</b></i></a></p></p>
+            <p class = "legenda_interfaces">4️⃣<br/><br/>Simulação | Modelagem operação contínua (Script | console)</p>
+            <p class = "titulo_interfaces"><a href = "#calibrapy"><i><b>Contínuo</b></i></a></p></p>
+        </header>
+        
+        <section id="calibrapy">
+            <header class = "subtitulo">
+                <h2>Calibrapy</h2>
+            </header>
+            <article class = "calibrapy_tutorial">
+                <p> <h6> <b>🎯<u>FUNCIONALIDADE</b></u>: <br/>
+                <div class = "tutorial_conteudo">
                     Construção de curvas de calibração que correlacionam linearmente valores de concentração 
                     celular (Cx) e de Densidade Óptica (D.O.), garantindo a quantificação de biomassa envolvida
-                    em bioprocessos. </p> </h6>  
-                <p> <b> <h5> Link para <i>download</i> do programa na extensão executável (.<i>exe</i>) e de documentos para sua alimentação: 
-                <a href = "https://drive.google.com/drive/folders/1wNo_5EqgwegAS-gMlpide8uArfKBc-U1"
-                target = "_blank"> 
-                <br/>
+                    em bioprocessos. <br/><br/> ⬇️ Baixe nosso protótipo 📁 </p> </h6> 
+                    <div class = "botao_baixar">
+                        <button class = "botao_baixar" type="button" onclick="baixar()">Baixar Calibrapy</button>
+                    </div>
+                </div>
+                    <div class = "video">
+                        <center>
+                            <video video width="700"  controls="controls">
+                            <source src="video/Demonstracao_baixar_Calibrapy.mp4" type="video/mp4">
+                            <object data="" width="500" >
+                            <embed width="500"  src="video/Demonstracao_baixar_Calibrapy.mp4">
+                            </object>
+                            </video>
+                        </center>
+                    </div>
+                    <p> <h6> <b> ⚙️ <u> INFORMAÇÕES TÉCNICAS</b></u>:<br/>
+                    <div class = "tutorial_conteudo">
+                        O <i> software </i> foi desenvolvido integral e unicamente em linguagem Python,
+                        seguindo o modelo GUI (<i>Graphical User Interface</i>),
+                        projetado através de ferramentas de <i> Front End </i> disponibilizadas pela biblioteca
+                        Tkinter. Implementando o módulo de regressão linear polyfit,
+                        o qual aplica o método dos mínimos quadrados, o programa permite que o usuário obtenha, 
+                        de maneira totalmente automatizada e dinâmica, a dispersão gráfica, bem como a equação
+                        de primeira ordem correspondente (em termos de coeficientes angular e linear),
+                        adequadas à descrição matemática e estatística (esta útlima mensurada pelo coeficiente
+                        de determinação R²) dos dados de
+                        Cx e D.O. empregados para alimentação do código-fonte. Ainda, é possível calcular, com base
+                        em uma regressão previamente conhecida, os valores de concentração de biomassa que obedecem a lei
+                        estabelecida,  qual relaciona os mesmos com os dados de D.O. em análise correspondentes.
+                        Casos de análises de dados oriundos de leituras do tipo dulicata, triplicata ou ainda 
+                        em número acima destas, envolvem o cálculo de valores médios e seus respectivos desvios 
+                        padrão associados, já embutidos no código-fonte do Calibrapy.
+                        Para seu perfeito funcionamento, a interface conta com o emprego de bibliotecas específicas:
+                        gráfica de alto padrão (Matplotlib), numérica e com funções estatísticas (Numpy), de 
+                        otimização (Scipy - função odeint),
+                        tratamento de dados (Pandas), induzindo o seu consumo de maneira altamente intuitiva.  
+                        As figuras geradas contam com opções que permitem salvá-las no formato e <i>path</i> de 
+                        preferência (através do <i>filedialog</i>), assim como alterar as cores padrão programas 
+                        pelo programa, além de descartar
+                        (destroy) aquelas que não serão utilizadas pelo usuário. As planilhas formato 
+                        <i>Microsoft</i> Excel são importadas para a interface por meio de um explorador de 
+                        arquivos (lançado pelo subpacote <i>askopenfilename</i>).
+                    </p> </h6>
+                    </div>
+                    <div class = "video">
+                        <center>
+                            <video video width= "700"  controls="controls">
+                            <source src="video/Calibrapy_demonstracao.mp4" type="video/mp4">
+                            <object data="" width="600" >
+                            <embed width="600"  src="video/Calibrapy_demonstracao.mp4">
+                            </object>
+                            </video>
+                        </center>
+                    </div>
+                    <p> <h6> <b> 🍔 <u> SISTEMA DE ALIMENTAÇÃO</b></u>:<br/>
+                    <div class = "tutorial_conteudo">
+                        O correto e pleno funcionamento do Calibrapy requer o fornecimento rigorosamente acertivo
+                        dos dados de alimentação para o sistema de otimização por dispersão linear, uma 
+                        vez que a coleta e subsequente tratamento dos dados inicial é feito de maneira conjunta 
+                        entre os pacotes Pandas e Numpy de modo que caso a captura dos valores de entrada ocorra 
+                        de forma errônea, todo o processamento característico do <i> software </i> será seriamente
+                        comprometido. Por esta razão, é fornecido um <i> template </i> pela própria 
+                        através da própria interface a fim de faciilitar o acesso, o qual deverá ser seguido à
+                        risca como modelo para o acomodamento dos dados referentes a Cx e D.O. de entrada, de 
+                        acordo com o número de leituras a ser analisada pelo programa, em formato de planilha 
+                        Excel, salva no formato <i> .xlsx </i>. O programa é dividido em duas seções selecionáveis,
+                        definidas por "Construir curva de calibração" (Calibrar) e "Utilizar curva pré-existente"
+                        (Quantificar biomassa), independentes porém relacionadas.
+                    </p> </h6>
+                    </div>
+                    <div class = "imagens"> 
+                        <center>
+                            <img src="img/entrada_calibrapy.png" ALT=HTML>
+                        </center>
+                        <div class = "legenda">
+                            <p><b>
+                                Modelo de alimentação para o sistema de leitura implementado pelo Calibrapy
+                                fornecido pelo <i> template </i> por ele próprio disponibilizado. Para fins de construção da curva
+                                de calibração, os dados devem ser dispostos de maneira idêntica ao observado na tabela superior 
+                                esquerda, resultando na configuração apresentada pela tabela inferior esquerda, aplicada para a
+                                entrada de uma triplicata genenérica. Todavia, caso o desejo seja calcular os valores de Cx a partir
+                                de uma curva já existente e de um conjunto de entrada para D.O., o modelo adequado é representado pela
+                                tabela superior direita, de modo que o mesmo será lido, na forma de uma coluna única (tabela inferior
+                                direita). <br/>
+                                🛑 <u>IMPORTANTE</u>🛑!
+                                Não é exigida nenhuma formatação de tabela para a correta leitura pelo algoritmo, podendo,
+                                portanto, estar presente ou ausente. O programa dá suporte ao tratamento de n valores 
+                                coletados por n leituras, desde que os dados estejam dispostos da maneira exibida,
+                                bem como a planilha que os esteja armazenado seja nomeada por "Dados_brutos", exatamente
+                                como disposto no modelo.
+                            </b> </p>
+                        </div>
+                    </div>
+                    <p> <h6> <b> 💹 <u> SAÍDAS RETORNADAS</b></u>:💾<br/>
+                    <div class = "tutorial_conteudo">
+                        São retornados pelo <i> software </i> e acessados através da própria interface, à 
+                       semelhança do que foi demonstrado pelo vídeo tutorial anterior: </p> </h6>
+                       <div class = "container saidas_calibrapy">
+                        
+                        <p> <b>1)</b> Gráfico de dispersão (com adição do desvio padrão quando em situação conveniente
+                            - leituras múltiplas); </p>
+                    
+                        <div class = "imagens">
+                            <center>
+                                <img src="img/regressao_linear.png" ALT = HTML>
+                            </center>  
+                        </div>
+                        <p> <br/> <b>2)</b> Valores para os coeficientes angular e linear (equação da reta lançada na 
+                            interface), bem como o R² calculado pelo polyfit); </p> 
+                        <div class = "imagens">
+                            <center>
+                                <img src="img/Saida_calibrapy_interface.PNG" ALT = HTML>
+                            </center> 
+                        </div>
+                        <p> <br/> <b>3)</b> Arquivo eletrônico (Excel "Media_desvio_leituras"), contendo 
+                            os valores médios e de desvio padrão para 
+                            Cx e D.O. (quando da alimentação
+                            do sistema por leituras igual ou superior à duplicata). As saídas são retornadas em uma 
+                            planilha automaticamente nomeada como
+                            <i> media_desvio </i> e podem ser salvas no dispositivo no formato e <i>path</i>
+                            que melhor atendam às necessidades do usuário/operador/desenvolvedor. </p>
+                        <div class = "imagens">
+                            <center>
+                                <img src="img/calibrapy_media_desvio.png" ALT = HTML>
+                            </center> 
+                        </div>
+                        <p> <br/> <b>4)</b> Arquivo eletrônico (Excel "Concentracao_celular")
+                            e figura gráfica contendo 
+                            os valores retornados para Cx e os de D.O. relacionados 
+                            (alimentação do algoritmo através da
+                            seção "Quantificar biomassa"), através da planilha <i>D.O._Cx_exp</i>, passíveis
+                            das mesmas funcionalidades dispostas no item anterior. </p>
+                        <div class = "imagens">
+                            <center>
+                                <img src="img/grafico_cx_do.png" ALT = HTML>
+                                <img src="img/calibrapy_cx.png" ALT = HTML>     
+                            </center> 
+                        </div>
+                    
+                  
+                    <p> <h6> <b> <br/> 🚨 <u>FIQUE ATENTA(O)</u>! 💡 <br/>
+                    <div class = "tutorial_conteudo">
+                        As entradas numéricas que devem ser fornecidas manualmente através da interface de
+                        usuário, caso sejam do tipo ponto flutuante (números decimais), devem ser representados
+                        por pontos (.), ao invés de vírgulas (,). Ainda, caso se depare com uma situação
+                        na qual os botões não se apresentem na cor verde em qualquer uma das seções, por favor, 
+                        confira se a entrada de dados está adequada e condiz com o número de leituras que deseja
+                        submeter à análise pelo Calibrapy. A grandezas dimensional segundo as quais a concentração
+                        de biomassa será tratada pelo programa (massa.volume-¹), irá depender exclusivamente daquela
+                        reresentada pelos valores importados ao <i>software</i>. O guia aqui ilustrado faz alusão
+                        a dados que obedecem a relação g.L-¹.
+                    </b></p> </h6>
+                    </div>
+           
             </article>
-        </section>
-
-        <section id="calibrapy">
-            <header class = "titulos_tutoriais">
-                <h4> <b> <i> Calibrapy </b> </i> </h4>
-            </header>
             
         </section>
        
