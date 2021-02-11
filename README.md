@@ -10,7 +10,8 @@
     * 🟣 BOOTSTRAP (<i>framework</i> de auxílio e facilitação à criação de estilo);
 * 🎨 JAVASCRIPT (apoio e facilitação do desenvolvimento)
 
-
+<\br>
+<\br>
 
 #### ⚠️ Observação: 
 * <b>ESTA É A SEGUNDA VERSÃO DO SITE <i>site</i> ;
