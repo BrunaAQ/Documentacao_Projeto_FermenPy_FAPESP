@@ -32,7 +32,7 @@ body {
 .titulo_interfaces {
     display: column;
     width: 200px;
-    margin: 2px 400px 20px 400px;
+   
     border-top: 1px solid yellowgreen;
     border-bottom: 1px dashed yellowgreen;
 }
@@ -301,6 +301,20 @@ body {
     margin: 10px 100px 40px 100px;
     padding: 10px;
     border: 1px dashed rgb(36, 34, 34);
+}
+
+
+
+
+@media screen and (min-width: 640px) {
+    .video {
+        width: 70%;
+    }
+
+    .titulo_interfaces {
+
+        width: 100%;
+    }
 }
 
 
