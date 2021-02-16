@@ -108,7 +108,7 @@ body {
 
 .foco_1 {
     display: inline;
-    background-color:  green;
+    background-color: rgb(163, 31, 53);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -120,7 +120,7 @@ body {
 
 .foco_2 {
     display: inline;
-    background-color: rgb(136, 91, 8);
+    background-color: rgb(194, 53, 76);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -132,7 +132,7 @@ body {
 
 .foco_3 {
     display: inline;
-    background-color: rgb(119, 119, 235);
+    background-color: rgb(209, 81, 102);
     color:white;
     height: 200px;
     border: white 1px solid;
@@ -144,7 +144,7 @@ body {
 
 .foco_4 {
     display: inline;
-    background-color: rgb(190, 190, 42);
+    background-color: rgb(192, 90, 107);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -156,7 +156,7 @@ body {
 
 .foco_5 {
     display: inline;
-    background-color:  rgb(177, 19, 46);
+    background-color:purple;
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -168,7 +168,7 @@ body {
 
 .foco_6 {
     display: inline;
-    background-color: rgb(105, 37, 105);
+    background-color:rgb(151, 43, 151);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -180,7 +180,7 @@ body {
 
 .foco_7 {
     display: inline;
-    background-color: rgb(88, 86, 86);
+    background-color: rgb(172, 63, 172);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -192,7 +192,7 @@ body {
 
 .foco_8 {
     display: inline;
-    background-color:  rgb(240, 77, 104);
+    background-color:rgb(180, 80, 180);
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -204,7 +204,7 @@ body {
 
 .foco_9 {
     display: inline;
-    background-color:  rgb(8, 78, 119);
+    background-color: grey;
     color:white;
     margin: 30px;
     border: white 1px solid;
@@ -225,8 +225,8 @@ body {
     border: 1px white solid;
 }
 .botao_explorar:hover {
-    color: rgba(3, 41, 3, 0.562);
-    background: rgb(168, 112, 123);
+    color:white;
+    background: black;
 
 }
 
@@ -311,7 +311,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: line;
+    flex-direction: column;
     background-color: #273746;
     color: white;
     margin-top: 0px;
