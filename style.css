@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('img/papel_parede.jpg');
     border: 1px solid greenyellow;
@@ -32,7 +38,6 @@ body {
 .titulo_interfaces {
     display: column;
     width: 200px;
-   
     border-top: 1px solid yellowgreen;
     border-bottom: 1px dashed yellowgreen;
 }
@@ -223,6 +228,8 @@ body {
     width: 200px;
     margin: 5px 10px 5px 10px;
     border: 1px white solid;
+    cursor: pointer;
+    transition: .5s ease all
 }
 .botao_explorar:hover {
     color:white;
@@ -242,6 +249,11 @@ body {
     border-top: 1px solid black;
 }
 
+.tutorial_secao {
+    background-color: purple;
+    color: black;
+}
+
 .tutorial_descricao {
     background: rgb(246, 248, 247);
     text-align: justify;
@@ -250,6 +262,20 @@ body {
 }
 
 #calibrapy {
+    color: white;
+    margin: 100px;
+}
+#fermenpy {
+    color: white;
+    margin: 100px;
+}
+
+#fermenpy_ba_i {
+    color: white;
+    margin: 100px;
+}
+
+#continuo {
     color: white;
     margin: 100px;
 }
@@ -265,7 +291,7 @@ body {
 
 }
 
-.calibrapy_tutorial {
+.interface_tutorial {
     background: black;
     text-align: justify;
     padding: 2px 15px 0px 15px;
@@ -277,7 +303,10 @@ body {
     font-size: 16px;
 }
 .botao_baixar {
-    margin: 0 32px;
+    cursor: pointer;
+    transition: .5s ease all;
+    margin: 0 28px;
+    padding: 5px;
 }
 .botao_baixar:hover {
     color:yellowgreen;
@@ -307,6 +336,7 @@ body {
 }
 
 
+
 .rodape{
     display: flex;
     justify-content: center;
@@ -317,6 +347,7 @@ body {
     margin-top: 0px;
     height: 210px;
     text-align: center;
+    
 
 }
 
