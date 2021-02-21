@@ -333,6 +333,7 @@ body {
     margin: 10px 100px 40px 100px;
     padding: 10px;
     border: 1px dashed rgb(36, 34, 34);
+    text-align: justify;
 }
 
 
@@ -347,12 +348,80 @@ body {
     margin-top: 0px;
     height: 210px;
     text-align: center;
-    
+}
+
+.documentacao .container-fluid {
+    background:rgb(78, 77, 77);
+    color: white;
+    font-family: monospace;
+    text-align: justify;
+    padding-top: 10px;
+    border: 1px solid black;
+}
+
+.documentacao .apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
 
 }
 
+.documentacao h2 {
+    color: black;
+}
 
+.navegacao_documentacao .container-fluid {
+    background-image: url("img/plano_de_fundo.png");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    padding: 40px 0;
+    border: 1px solid rgb(36, 35, 35);
+}
 
+.botao_navegacao {
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+.botao_navegacao i {
+    margin-right: 5px;
+}
+.botao_navegacao a {
+    color: black;
+}
+.botao_navegacao:hover {
+    color: yellowgreen;
+    background-color: black;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+.botao_navegacao:hover a {
+    color: yellowgreen;
+}
+
+.botoes_navegacao {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.documentacao_conteudo {
+    background: black;
+    color: rgb(143, 142, 142);
+    margin: 60px;
+    padding: 16px 20px;
+    border: 1px dashed rgb(77, 75, 75);
+}
+.documentacao_conteudo h3 {
+    color: white;
+}
 
 
 
@@ -543,10 +612,7 @@ p {
     background-color: #6AE146;
 }
 
-.documentacao{
-    color: white;
-    background-color: #27AE60;
-}
+
 
 .batelada{
     background-color: #B9F7C0;;
