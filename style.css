@@ -418,10 +418,43 @@ body {
     margin: 60px;
     padding: 16px 20px;
     border: 1px dashed rgb(77, 75, 75);
+    text-align: justify;
 }
 .documentacao_conteudo h3 {
     color: white;
 }
+.documentacao_conteudo_principal {
+    background-image: url("img/plano_de_fundo.png");
+    color: rgb(143, 142, 142);
+    margin: 60px;
+    padding: 16px 20px;
+    border: 1px dashed rgb(77, 75, 75);
+    text-align: justify;
+}
+
+.formulas{
+    font-family: fantasy;
+    margin-right: 10px;
+    font-size: 18px;
+    color:black;
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    border: 1px dashed greenyellow;
+    text-align: start;
+
+}
+.formulas_descricao {
+    display: flex;
+    flex-direction: row;
+}
+.formulas_descricao p i {
+    margin: 12px;
+    font-size: 10px;
+}
+
+
+
 
 
 
@@ -816,16 +849,7 @@ p {
 .email{
     color:black;
 }
-.formulas{
-    font-size: 18px;
-    color:black;
-    background-color: rgb(174, 211, 174);
-    width: 700px;
-    margin-left: 175px;
-    padding-top:20px;
-    padding-bottom:10px;
 
-}
 .formulas p{
     color: black;
     font-size:12px;
