@@ -14,8 +14,8 @@
 #### ⚠️ Observação: 
 * <b>ESTA É A SEGUNDA VERSÃO DO SITE <i>site</i> ;
   * (🖱️ ___LINK PARA ACESSO:___ https://brunaaq.github.io/Documentacao_Projeto_FermenPy_FAPESP/ );</b>
-  * <b> 🚧 Ainda em elaboração 👷‍♀️ </b>;
-* Está em construção para melhorar a versão anterior (🖱️ ___Link para acesso:___ https://brunaaq.github.io/Documentacao_fermenpy/ )
+ 
+* Contruído para melhorar a versão anterior (🖱️ ___Link para acesso:___ https://brunaaq.github.io/Documentacao_fermenpy/ )
 
 
 
