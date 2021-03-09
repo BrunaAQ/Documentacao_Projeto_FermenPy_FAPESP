@@ -280,6 +280,11 @@ body {
     margin: 100px;
 }
 
+#enche-esvazia {
+    color: white;
+    margin: 100px;
+}
+
 .subtitulo {
     text-decoration: underline;
     border-top: 2px solid hotpink;
